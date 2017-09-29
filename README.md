@@ -48,7 +48,7 @@ block content
     if loggedIn
       h4 You are logged in!
     else
-      h4 You are not logged in! Please #[a(href="https://quickstart-playground.auth0.com/authorize?login_hint=123&scope=openid profile&response_type=code&connection=myMSConn&sso=true&protocol=oauth2&audience=https://quickstart-playground.auth0.com/userinfo&state=XOn389yLQOCM71qA2eIXCHBfNtg4OwRB&client_id=VSvHz93bynrwSq8pnx25x3JiftJ2Quc4&redirect_uri=http://localhost:3000/callback") Log In] to continue.
+      h4 You are not logged in! Please #[a(href="https://quickstart-playground.auth0.com/authorize?login_hint=123&scope=openid profile&response_type=code&connection=myADFSConnection&sso=true&protocol=oauth2&audience=https://quickstart-playground.auth0.com/userinfo&state=XOn389yLQOCM71qA2eIXCHBfNtg4OwRB&client_id=VSvHz93bynrwSq8pnx25x3JiftJ2Quc4&redirect_uri=http://localhost:3000/callback") Log In] to continue.
 ```
 
 Above,`login_hint` is the query param we send to represent the phone number (msisdn) to be checked by the IDM. For the example, we simply accept `123` and reject any other value.
