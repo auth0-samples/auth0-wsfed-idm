@@ -1,0 +1,26 @@
+{
+  "name": "auth0-wsfed-idm",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "dotenv": "^4.0.0",
+    "express": "~4.15.2",
+    "express-jwt": "^5.3.0",
+    "jade": "~1.11.0",
+    "jsonwebtoken": "^7.3.0",
+    "morgan": "~1.8.1",
+    "passport": "^0.3.2",
+    "passport-custom": "^1.0.5",
+    "ramda": "^0.24.1",
+    "selfsigned": "^1.8.0",
+    "serve-favicon": "~2.4.2",
+    "ursa": "^0.9.4",
+    "wsfed": "^3.3.1"
+  }
+}
