@@ -1,6 +1,7 @@
 ## What is this?
 
-Illustrates how it is possible to write a custom authentication strategy (here, using passport-custom NPM module & checking for a matching phone number).
+Illustrates how it is possible to write a custom authentication strategy (here, using passport-custom NPM module & checking for a matching phone number). Uses wsfed NPM module to
+leverage wsfed signin protocol and SAML1.1 for the Token Type (Response Assertion).
 
 In Auth0, setup an ADFS Connection.
 
