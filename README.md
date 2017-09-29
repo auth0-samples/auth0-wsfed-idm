@@ -49,7 +49,7 @@ For a very simple introduction on key concepts if in need of a refresh, recommen
 
 Here is a quick recap of the primary "params" you'll see using this sample.
 
-- Wa=signin1.0: This tells the ADFS server to invoke a login for the user.
+- Wa=signin1.0: This tells the ADFS (in our case, our wsfed IdM) server to invoke a login for the user.
 - Wtrealm: This tells ADFS what application I was trying to get to. This has to match the identifier of one of the relying party trusts listed in ADFS.
 - Wctx: This is some session data that the application wants sent back to it after the user authenticates.
 - Wresult: Contains the actual SAML Response Assertion
