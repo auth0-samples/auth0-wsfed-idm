@@ -38,10 +38,20 @@ The base project is just composed by running the express generator - `express au
 
 runNgrok.sh is a convenience for exposing your locally running app to the Internet so that Auth0 can reach it.
 
-Execute urls of the form:
+As an illustration of how this might be called from say a Pug Template using Node.js:
 
-```https://quickstart-playground.auth0.com/authorize?login_hint=123&client_id=y6pfX1vJb0KzTTES-Yw9e2BDe6szDwuT&response_type=code&connection=myMSConn&prompt=consent&redirect_uri=https://manage.auth0.com/tester/callback?connection=myMSConn
 ```
+extends layout
+
+block content
+  .w3-container
+    if loggedIn
+      h4 You are logged in!
+    else
+      h4 You are not logged in! Please #[a(href="https://quickstart-playground.auth0.com/authorize?login_hint=123&scope=openid profile&response_type=code&connection=myMSConn&sso=true&protocol=oauth2&audience=https://quickstart-playground.auth0.com/userinfo&state=XOn389yLQOCM71qA2eIXCHBfNtg4OwRB&client_id=VSvHz93bynrwSq8pnx25x3JiftJ2Quc4&redirect_uri=http://localhost:3000/callback") Log In] to continue.
+```
+
+Above,`login_hint` is the query param we send to represent the phone number (msisdn) to be checked by the IDM. For the example, we simply accept `123` and reject any other value.
 
 ### Honours
 
